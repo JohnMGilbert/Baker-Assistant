@@ -8,21 +8,17 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Write {
-    
-    public static void Open(){
-        System.out.println("Hello");
+  
+
+    public void addIngredient(Ingredient ing){
         try {
             FileWriter fw = new FileWriter("inventroy.csv");
             fw.write("test");
+            fw.close();
         } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        
-    }
-
-    public void addIngredient(Ingredient ing){
-
     }
 
     public void deleteIngredient(Ingredient ing){

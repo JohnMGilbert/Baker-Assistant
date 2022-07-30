@@ -7,12 +7,14 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.List;
 
 /**
  * JavaFX App
  */
 public class App extends Application {
 
+    public static List<Ingredient> ingredients;
     private static Scene scene;
 
     @Override
@@ -33,7 +35,6 @@ public class App extends Application {
 
     public static void main(String[] args) {
         launch();
-        Write.Open();
     }
 
 }
